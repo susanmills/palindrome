@@ -16,6 +16,9 @@ public class PalindromeChecker {
      * @return true if the string is a palindrome, false otherwise
      */
     public static boolean isPalindrome(String s) {
-        return false;
+        // For now, assume string has no non-alphanumeric characters passed in.
+    	StringBuilder sb = new StringBuilder(s);
+    	sb.reverse();
+    	return s.equalsIgnoreCase(sb.toString());
     }
 }
