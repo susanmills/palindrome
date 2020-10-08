@@ -3,7 +3,7 @@ package edu.mills.cs180;
 /**
  * A static utility class for testing whether strings are palindromes.
  *
- * @author Ellen Spertus
+ * @author Susan Mills
  */
 public class PalindromeChecker {
     private PalindromeChecker() {}
