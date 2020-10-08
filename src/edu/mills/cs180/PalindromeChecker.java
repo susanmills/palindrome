@@ -17,6 +17,7 @@ public class PalindromeChecker {
      */
     public static boolean isPalindrome(String s) {
         // For now, assume string has no non-alphanumeric characters passed in.
+        s = s.replaceAll("[^A-Za-z0-9]", "");
     	StringBuilder sb = new StringBuilder(s);
     	sb.reverse();
     	return s.equalsIgnoreCase(sb.toString());
